@@ -38,7 +38,7 @@
       const clickEventHandler = (e) => {
         e.preventDefault();
         
-        const currentValue = e.target.value;
+        const currentValue = input.value;
         input.textContent = "";
         
         const listItem = document.createElement('li');
@@ -46,7 +46,7 @@
         const removeButton = document.createElement('button');
 
         listItem.appendChild(span);
-        listItem.appendChild(button);
+        listItem.appendChild(removeButton);
 
         span.textContent = currentValue;
         removeButton.textContent = 'Delete';
